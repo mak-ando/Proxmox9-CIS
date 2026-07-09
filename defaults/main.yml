@@ -21,10 +21,13 @@ deb13cis_disruption_high: false
 deb13cis_section1: true
 deb13cis_section2: true
 deb13cis_section3: true
-deb13cis_section4: true
+deb13cis_section4: false
 deb13cis_section5: true
 deb13cis_section6: true
 deb13cis_section7: true
+# deb13cis_section4 has been completely disabled as Proxmox uses its own distributed firewall (pve-firewall). 
+# The CIS role attempts to configure ufw, firewalld, or nftables. 
+# Doing so will overwrite Proxmox’s dynamic rules, instantly blocking Corosync, live migration ports, Ceph traffic and the Web GUI.
 
 # This is used for audit purposes to run only specific level use the tags
 # e.g.
@@ -368,8 +371,8 @@ deb13cis_rule_5_1_16: true
 deb13cis_rule_5_1_17: true
 deb13cis_rule_5_1_18: true
 deb13cis_rule_5_1_19: true
-deb13cis_rule_5_1_20: true
-deb13cis_rule_5_1_21: true
+deb13cis_rule_5_1_20: false # If it enforces PermitEmptyPasswords or strict AllowUsers/AllowGroups
+deb13cis_rule_5_1_21: false # Disable PermitRootLogin no
 deb13cis_rule_5_1_22: true
 deb13cis_rule_5_1_23: true
 # 5.2 Configure privilege escalation
