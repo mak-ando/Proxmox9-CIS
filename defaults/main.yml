@@ -150,10 +150,10 @@ deb13cis_rule_1_1_1_11: true
 
 # Filesystems
 # /tmp
-deb13cis_rule_1_1_2_1_1: true
-deb13cis_rule_1_1_2_1_2: true
-deb13cis_rule_1_1_2_1_3: true
-deb13cis_rule_1_1_2_1_4: true
+deb13cis_rule_1_1_2_1_1: false
+deb13cis_rule_1_1_2_1_2: false
+deb13cis_rule_1_1_2_1_3: false
+deb13cis_rule_1_1_2_1_4: false
 # /dev/shm
 deb13cis_rule_1_1_2_2_1: true
 deb13cis_rule_1_1_2_2_2: true
@@ -164,14 +164,14 @@ deb13cis_rule_1_1_2_3_1: true
 deb13cis_rule_1_1_2_3_2: true
 deb13cis_rule_1_1_2_3_3: true
 # /var
-deb13cis_rule_1_1_2_4_1: true
-deb13cis_rule_1_1_2_4_2: true
-deb13cis_rule_1_1_2_4_3: true
+deb13cis_rule_1_1_2_4_1: false
+deb13cis_rule_1_1_2_4_2: false
+deb13cis_rule_1_1_2_4_3: false
 # /var/tmp
-deb13cis_rule_1_1_2_5_1: true
-deb13cis_rule_1_1_2_5_2: true
-deb13cis_rule_1_1_2_5_3: true
-deb13cis_rule_1_1_2_5_4: true
+deb13cis_rule_1_1_2_5_1: false
+deb13cis_rule_1_1_2_5_2: false
+deb13cis_rule_1_1_2_5_3: false
+deb13cis_rule_1_1_2_5_4: false
 # /var/log
 deb13cis_rule_1_1_2_6_1: true
 deb13cis_rule_1_1_2_6_2: true
@@ -198,10 +198,10 @@ deb13cis_rule_1_2_1_9: true
 deb13cis_rule_1_2_2_1: true
 
 # apparmor
-deb13cis_rule_1_3_1_1: true
-deb13cis_rule_1_3_1_2: true
-deb13cis_rule_1_3_1_3: true
-deb13cis_rule_1_3_1_4: true
+deb13cis_rule_1_3_1_1: false
+deb13cis_rule_1_3_1_2: false
+deb13cis_rule_1_3_1_3: false
+deb13cis_rule_1_3_1_4: false
 
 # Bootloader
 deb13cis_rule_1_4_1: true
@@ -280,8 +280,8 @@ deb13cis_rule_2_2_6: true
 ## Ensure time synchronization is in use
 deb13cis_rule_2_3_1_1: true
 # Configure systemd-timesyncd
-deb13cis_rule_2_3_2_1: true
-deb13cis_rule_2_3_2_2: true
+deb13cis_rule_2_3_2_1: false
+deb13cis_rule_2_3_2_2: false
 # Configure Chrony
 deb13cis_rule_2_3_3_1: true
 deb13cis_rule_2_3_3_2: true
@@ -314,7 +314,7 @@ deb13cis_rule_3_2_4: true
 deb13cis_rule_3_2_5: true
 deb13cis_rule_3_2_6: true
 # Network Kernel Parameters IPv4
-deb13cis_rule_3_3_1_1: true
+deb13cis_rule_3_3_1_1: false # Disables IPv4 Forwarding (net.ipv4.ip_forward)
 deb13cis_rule_3_3_1_2: true
 deb13cis_rule_3_3_1_3: true
 deb13cis_rule_3_3_1_4: true
@@ -333,7 +333,7 @@ deb13cis_rule_3_3_1_16: true
 deb13cis_rule_3_3_1_17: true
 deb13cis_rule_3_3_1_18: true
 # Network Kernel Parameters IPv6
-deb13cis_rule_3_3_2_1: true
+deb13cis_rule_3_3_2_1: false # Disables IPv6 Forwarding (if using IPv6)
 deb13cis_rule_3_3_2_2: true
 deb13cis_rule_3_3_2_3: true
 deb13cis_rule_3_3_2_4: true
