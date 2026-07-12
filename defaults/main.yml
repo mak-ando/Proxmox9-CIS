@@ -195,7 +195,7 @@ deb13cis_rule_1_2_1_7: true
 deb13cis_rule_1_2_1_8: true
 deb13cis_rule_1_2_1_9: true
 # Package updates
-deb13cis_rule_1_2_2_1: true
+deb13cis_rule_1_2_2_1: false # hosts will be updated manually
 
 # apparmor
 deb13cis_rule_1_3_1_1: false
@@ -257,7 +257,7 @@ deb13cis_rule_2_1_9: true
 deb13cis_rule_2_1_10: true
 deb13cis_rule_2_1_11: true
 deb13cis_rule_2_1_12: true
-deb13cis_rule_2_1_13: true
+deb13cis_rule_2_1_13: false # rsync is required by proxmox
 deb13cis_rule_2_1_14: true
 deb13cis_rule_2_1_15: true
 deb13cis_rule_2_1_16: true
@@ -376,13 +376,13 @@ deb13cis_rule_5_1_21: false # Disable PermitRootLogin no
 deb13cis_rule_5_1_22: true
 deb13cis_rule_5_1_23: true
 # 5.2 Configure privilege escalation
-deb13cis_rule_5_2_1: true
-deb13cis_rule_5_2_2: true
-deb13cis_rule_5_2_3: true
-deb13cis_rule_5_2_4: true
-deb13cis_rule_5_2_5: true
-deb13cis_rule_5_2_6: true
-deb13cis_rule_5_2_7: true
+deb13cis_rule_5_2_1: false # sudo is not installed
+deb13cis_rule_5_2_2: false
+deb13cis_rule_5_2_3: false
+deb13cis_rule_5_2_4: false
+deb13cis_rule_5_2_5: false
+deb13cis_rule_5_2_6: false
+deb13cis_rule_5_2_7: false
 # 5.3.1 Configure PAM software packages
 deb13cis_rule_5_3_1_1: true
 deb13cis_rule_5_3_1_2: true
@@ -397,7 +397,7 @@ deb13cis_rule_5_3_3_1_1: true
 deb13cis_rule_5_3_3_1_2: true
 deb13cis_rule_5_3_3_1_3: true
 # 5.3.3.2 Configure pam_quality module
-deb13cis_rule_5_3_3_2_1: false # libpam-pwquality is not installed
+deb13cis_rule_5_3_3_2_1: false
 deb13cis_rule_5_3_3_2_2: false
 deb13cis_rule_5_3_3_2_3: false
 deb13cis_rule_5_3_3_2_4: false
@@ -448,10 +448,10 @@ deb13cis_rule_6_1_1_1_4: true
 deb13cis_rule_6_1_1_1_5: true
 deb13cis_rule_6_1_1_1_6: true
 # 6.1.1.2 Configure systemd-journald service
-deb13cis_rule_6_1_1_2_1: true
-deb13cis_rule_6_1_1_2_2: true
-deb13cis_rule_6_1_1_2_3: true
-deb13cis_rule_6_1_1_2_4: true
+deb13cis_rule_6_1_1_2_1: false # systemd-journal-remote package is not installed
+deb13cis_rule_6_1_1_2_2: false
+deb13cis_rule_6_1_1_2_3: false
+deb13cis_rule_6_1_1_2_4: false
 # 6.1.2.x Configure Rsyslog
 deb13cis_rule_6_1_2_1: true
 deb13cis_rule_6_1_2_2: true
@@ -531,9 +531,9 @@ deb13cis_rule_6_2_4_9: true
 deb13cis_rule_6_2_4_10: true
 
 ## 6.3.2 Configure Integrity Checking
-deb13cis_rule_6_3_1: true
-deb13cis_rule_6_3_2: true
-deb13cis_rule_6_3_3: true
+deb13cis_rule_6_3_1: false
+deb13cis_rule_6_3_2: false
+deb13cis_rule_6_3_3: false
 
 # Section 7 System Maintenance
 ## 7.1 System File Permissions
