@@ -7,7 +7,7 @@
   when: deb13cis_rule_1_2_1_1 or deb13cis_rule_1_2_2_1
   tags: always
   ansible.builtin.package:
-    update_cache: true
+    update_cache: false # host will be updated manually
 
 - name: "PRELIM | Include audit specific variables"
   when: run_audit or audit_only or setup_audit
