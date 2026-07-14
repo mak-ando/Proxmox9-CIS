@@ -371,7 +371,7 @@ deb13cis_rule_5_1_16: true
 deb13cis_rule_5_1_17: true
 deb13cis_rule_5_1_18: true
 deb13cis_rule_5_1_19: true
-deb13cis_rule_5_1_20: false # If it enforces PermitEmptyPasswords or strict AllowUsers/AllowGroups
+deb13cis_rule_5_1_20: true
 deb13cis_rule_5_1_21: false # Disable PermitRootLogin no
 deb13cis_rule_5_1_22: true
 deb13cis_rule_5_1_23: true
