@@ -531,7 +531,7 @@ deb13cis_rule_6_2_4_9: true
 deb13cis_rule_6_2_4_10: true
 
 ## 6.3.2 Configure Integrity Checking
-deb13cis_rule_6_3_1: false
+deb13cis_rule_6_3_1: false # file integrity monitoring to be managed by an xdr
 deb13cis_rule_6_3_2: false
 deb13cis_rule_6_3_3: false
 
