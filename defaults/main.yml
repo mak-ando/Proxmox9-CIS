@@ -451,7 +451,7 @@ deb13cis_rule_6_1_1_1_6: true
 deb13cis_rule_6_1_1_2_1: false # systemd-journal-remote package is not installed
 deb13cis_rule_6_1_1_2_2: false
 deb13cis_rule_6_1_1_2_3: false
-deb13cis_rule_6_1_1_2_4: false
+deb13cis_rule_6_1_1_2_4: true # ensures proxmox node does not act as a log listener
 # 6.1.2.x Configure Rsyslog
 deb13cis_rule_6_1_2_1: true
 deb13cis_rule_6_1_2_2: true
