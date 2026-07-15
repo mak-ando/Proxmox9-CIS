@@ -231,17 +231,17 @@ deb13cis_rule_1_6_5: true
 deb13cis_rule_1_6_6: true
 
 # Gnome Display Manager
-deb13cis_rule_1_7_1: true
-deb13cis_rule_1_7_2: true
-deb13cis_rule_1_7_3: true
-deb13cis_rule_1_7_4: true
-deb13cis_rule_1_7_5: true
-deb13cis_rule_1_7_6: true
-deb13cis_rule_1_7_7: true
-deb13cis_rule_1_7_8: true
-deb13cis_rule_1_7_9: true
-deb13cis_rule_1_7_10: true
-deb13cis_rule_1_7_11: true
+deb13cis_rule_1_7_1: false # gdm not installed in proxmox
+deb13cis_rule_1_7_2: false
+deb13cis_rule_1_7_3: false
+deb13cis_rule_1_7_4: false
+deb13cis_rule_1_7_5: false
+deb13cis_rule_1_7_6: false
+deb13cis_rule_1_7_7: false
+deb13cis_rule_1_7_8: false
+deb13cis_rule_1_7_9: false
+deb13cis_rule_1_7_10: false
+deb13cis_rule_1_7_11: false
 
 # Section 2 rules are controlling Services (Special Purpose Services, and service clients)
 ## Configure Server Services
