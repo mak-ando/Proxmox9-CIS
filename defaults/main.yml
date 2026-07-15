@@ -314,7 +314,7 @@ deb13cis_rule_3_2_4: true
 deb13cis_rule_3_2_5: true
 deb13cis_rule_3_2_6: true
 # Network Kernel Parameters IPv4
-deb13cis_rule_3_3_1_1: false # Disables IPv4 Forwarding (net.ipv4.ip_forward)
+deb13cis_rule_3_3_1_1: false # proxmox needs forwarding to route traffic
 deb13cis_rule_3_3_1_2: true
 deb13cis_rule_3_3_1_3: true
 deb13cis_rule_3_3_1_4: true
@@ -333,7 +333,7 @@ deb13cis_rule_3_3_1_16: true
 deb13cis_rule_3_3_1_17: true
 deb13cis_rule_3_3_1_18: true
 # Network Kernel Parameters IPv6
-deb13cis_rule_3_3_2_1: false # Disables IPv6 Forwarding (if using IPv6)
+deb13cis_rule_3_3_2_1: false # proxmox needs forwarding to route traffic
 deb13cis_rule_3_3_2_2: true
 deb13cis_rule_3_3_2_3: true
 deb13cis_rule_3_3_2_4: true
